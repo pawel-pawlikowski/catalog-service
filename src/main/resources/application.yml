@@ -1,0 +1,9 @@
+server:
+  port: 9001
+  tomcat:
+    connection-timeout: 2s
+    keep-alive-timeout: 15s
+    threads:
+      # reducing the number of request processing threads for the local env to reduce resource consumption
+      max: 50
+      min-spare: 5 # minimum number of threads that should always be kept running
